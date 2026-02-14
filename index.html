@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day, Stacy!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fdf2fa; 
+            color: #4a4a4a;
+            text-align: center;
+            min-height: 200vh;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #fff8fd;
+            padding: 80px 20px;
+            border-bottom: 5px solid #ff4d6d;
+            width: 100%;
+        }
+        photo-stack{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-top: 50px;
+            padding-bottom: 100px;
+        }
+
+        .heart {
+            color: #ff4d6d;
+            font-size: 50px;
+            animation: beat 1s infinite alternate;
+        }
+
+        @keyframes beat {
+            to { transform: scale(1.2); }
+        }
+
+        .main-photo {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 8px solid #fff;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin: 20px auto;
+        }
+
+        .content {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h1 { color: #ff4d6d; font-size: 2.5rem; }
+        
+        .reasons-list {
+            text-align: left;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .reasons-list li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            font-style: italic;
+            color: #ff4d6d;
+        }
+        .personal.message{
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height:1.6;
+            font-size: 1.2rem;
+            color:#4a4a4a;
+            font-style: italic;
+            border-left: 4px solid #ff4d6d;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        
+        #valentine-question {
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+
+.btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.yes {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+.no {
+    background-color: #cccccc;
+    color: white;
+    position: relative; 
+}
+
+        .btn {
+            background-color: #ff4d6d;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn:hover { background-color: #c9184a; }
+    </style>
+</head>
+<div id="valentine-question">
+    <h2>Stacy, will you be my Galentine? Yes or No .</h2>
+    <button class="btn yes" onclick="showContent()">Yes</button>
+    <button class="btn no" onclick="moveNo()">No</button>
+</div>
+
+<body>
+
+    <header>
+        <div class="heart">❤️</div>
+        <h1>Happy Valentine's Day, Stacy!</h1>
+        <div style="font-size: 80px;">✨📸✨</div>
+        <p>To the girl with the best smile and the coolest style.</p>
+    </header>
+    
+
+    
+        <div class="personal message">
+            <p>Happy Valentine's Day my beautiful Stacy</p>
+            <p> I'm so grateful for you and the kind of friendship we have. You have such a pure heart and such a gentle soul, and I'm honestly so blessed to have you in my life. Thank you for loving me the way you do and for always being there. I hope today reminds you just how special and appreciated you are. I love you so much<p>
+                <div>   
+        <div class="content"></div>      
+        <div class="content">
+    <img src="together.jpeg" class="main-photo" alt="Stacy and Friend">
+
+    <h2>Why You're Amazing:</h2>
+    <ul class="reasons-list">
+        <li>🌟 <strong>That Smile:</strong> It literally lights up every photo.
+            <div class="center-container">
+                <img src="Smile.jpeg" class="stacy-photo" alt="Stacy Smiling" width="300" height="400">
+            </div>
+        </li>
+
+        <li>👗 <strong>Style Icon:</strong> From leather jackets to crochet, you nail every look!
+            <div class="center-container">
+                <img src="Leather.jpeg" class="stacy-photo" alt="Stacy in Leather" width="300" height="400">
+                <img src="Crochet.jpeg" class="stacy-photo" alt="Stacy Crochet" width="300" height="400">
+            </div>
+        </li>
+
+        <li>❤️ <strong>Energy:</strong> You bring the best vibes everywhere you go.
+            <div class="center-container">
+                <img src="Stacy.jpeg" class="stacy-photo" alt="Stacy Vibes" width="300" height="400">
+            </div>
+        </li>
+
+        <li>✨ <strong>Authentic:</strong> There's only one Stacy!
+            <div class="center-container">
+                <img src="That-girl.jpeg" class="stacy-photo" alt="The Girl" width="300" height="400">
+            </div>
+        </li>
+    </ul>
+</div> 
+        
+    </ul>
+        <br>
+        <a href="#" class="btn" onclick="alert('You are officially the coolest person today! 🌹')">Click for a Surprise</a>
+    </div>
+
+    <footer>
+    February 14, 2026
+    </footer>
+
+<script>
+    function showContent() {
+        document.getElementById('valentine-question').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+    }
+
+    function moveNo() {
+        const x = Math.random() * (window.innerWidth - 100);
+        const y = Math.random() * (window.innerHeight - 100);
+        const noBtn = document.querySelector('.no');
+        noBtn.style.position = 'absolute';
+        noBtn.style.left = x + 'px';
+        noBtn.style.top = y + 'px';
+    }
+</script>
+</body>
+</html>
